@@ -1,0 +1,99 @@
+#############################
+# ROS2 / Colcon Workspace
+#############################
+build/
+install/
+log/
+*/build/
+*/install/
+*/log/
+
+#############################
+# Python
+#############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+*/venv/
+*/.venv/
+yolo_env/
+*.egg-info/
+*.pytest_cache/
+
+#############################
+# Git - prevent nested repos
+#############################
+.gitmodules
+**/.git/
+
+#############################
+# Colcon & Python Packaging
+#############################
+colcon_command_prefix*
+
+#############################
+# VSCode
+#############################
+.vscode/
+*.code-workspace
+
+#############################
+# Windows
+#############################
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+
+#############################
+# LARGE FILES - CRITICAL
+#############################
+
+# Rosbag files (too large for Git)
+rosbags/**/*.mcap
+rosbags/**/*.db3
+rosbags/**/metadata.yaml
+*.mcap
+*.db3
+
+# Compressed archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# SVO files (too large for Git)
+test_data/*.svo
+svo_samples/
+*.svo
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# YOLO model weights
+*.pt
+*.weights
+yolov*.pt
+*.onnx
+*.engine
+*.trt
+
+#############################
+# Docker
+#############################
+.docker/
+*.log
+
+#############################
+# Keep these READMEs
+#############################
+!rosbags/**/README.md
+!**/README.md
