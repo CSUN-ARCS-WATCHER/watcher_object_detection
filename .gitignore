@@ -97,3 +97,14 @@ yolov*.pt
 #############################
 !rosbags/**/README.md
 !**/README.md
+
+#############################
+# Positional Tracking
+#############################
+
+# Pose logs (CSV time series, never commit)
+pose_logs/
+ros2_jazzy_ws/pose_logs/
+
+# RViz backup/temporary files
+*.rviz~
